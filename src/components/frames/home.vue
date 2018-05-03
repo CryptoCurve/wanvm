@@ -5,7 +5,7 @@
       <div class="page-title-container">
         <div class="page-title">
           <h3>Home</h3>
-          <h6 class="text-muted">Welcome to Ethereum Virtual Machine</h6>
+          <h6 class="text-muted">Welcome to Wanchain Virtual Machine</h6>
         </div>
 
         <div class="search-block">
@@ -20,27 +20,7 @@
         <div class="col-md-3"><block-difficulty></block-difficulty></div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <bar-chart-last-ten-blocks-tx></bar-chart-last-ten-blocks-tx>
-          <div class="footnote">
-            <ul>
-              <li><i class="fa fa-circle success" aria-hidden="true"></i> Success</li>
-              <li><i class="fa fa-circle failed" aria-hidden="true"></i> Failed</li>
-              <li><i class="fa fa-circle pending" aria-hidden="true"></i> Pending</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <line-chart-ave-tx-fees></line-chart-ave-tx-fees>
-          <div class="footnote">
-            <ul>
-              <li><i class="fa fa-circle tx-fees" aria-hidden="true"></i> avg Tx Fees (ETH)</li>
-              <li><i class="fa fa-circle failed" aria-hidden="true"></i> avg Gas Price (GWEI)</li>
-            </ul>
-          </div>
-        </div>  
-      </div>
+      
       <div class="row">
         <div class="col-md-12 table-data">
           <div class="block-title-container">
@@ -58,12 +38,6 @@
             <block-latest-blocks :max-items="20"></block-latest-blocks>
           </div>
 
-          <div class="footnote">
-            <ul>
-              <li><i class="fa fa-circle success" aria-hidden="true"></i> Success</li>
-              <li><i class="fa fa-circle failed" aria-hidden="true"></i> Failed</li>
-            </ul>
-          </div>
         </div>
         <div class="col-md-12 table-data">
           <div class="block-title-container">
@@ -72,7 +46,7 @@
           </div>
           <div class="last-transactions-header">
             <li>TXn#</li>
-            <li class="eth">ETH</li>
+            <li class="eth">WAN</li>
             <li class="gas">GAS</li>
             <li>WEI</li>
             <li></li>
@@ -82,12 +56,7 @@
             <block-last-transactions :transactions="txs"></block-last-transactions>
           </div>
 
-          <div class="footnote">
-            <ul>
-              <li><i class="fa fa-check success" aria-hidden="true"></i> Success</li>
-              <li><i class="fa fa-times failed" aria-hidden="true"></i> Failed</li>
-            </ul>
-          </div>
+          
         </div>
       </div>
 

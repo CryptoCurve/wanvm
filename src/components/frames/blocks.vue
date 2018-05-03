@@ -33,13 +33,6 @@
           <div class="latest-blocks-data">
             <block-latest-blocks :max-items="20"></block-latest-blocks>
           </div>
-
-          <div class="footnote">
-            <ul>
-              <li><i class="fa fa-circle success" aria-hidden="true"></i> Success</li>
-              <li><i class="fa fa-circle failed" aria-hidden="true"></i> Failed</li>
-            </ul>
-          </div>
         </div>
         
       </div>

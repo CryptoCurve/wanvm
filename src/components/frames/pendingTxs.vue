@@ -9,7 +9,7 @@
       <div class="page-title-container">
         <div class="page-title">
           <h3>Pending Transactions</h3>
-          <h6 class="text-muted">Transactions haven't been included into the Ethereum network</h6>
+          <h6 class="text-muted">Transactions haven't been included into the Wanchain network</h6>
         </div>
         <div class="search-block">
           <block-search></block-search>
@@ -24,7 +24,7 @@
 
           <div class="last-transactions-header">
             <li>TXn#</li>
-            <li class="eth">ETH</li>
+            <li class="eth">WAN</li>
             <li class="gas">GAS</li>
             <li>WEI</li>
             <li></li>
@@ -34,12 +34,6 @@
             <block-pending-txs :transactions="pendingTxs"></block-pending-txs>
           </div>
 
-          <div class="footnote">
-            <ul>
-              <li><i class="fa fa-check success" aria-hidden="true"></i> Success</li>
-              <li><i class="fa fa-times failed" aria-hidden="true"></i> Failed</li>
-            </ul>
-          </div>
         </div>
       </div>
 

@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-2">
           <h5>About Us</h5>
-          <p>EthVM is a free and open source interface for exploring and evaluating real time Ethereum blocks, transactions and more.</p>
+          <p>CrytoCurve & EthVM are free and open source interfaces for exploring and evaluating real time Wanchain blocks, transactions and more.</p>
 
         </div>
         <div class="col-md-2">
@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-2">
           <h5>Find Us</h5>
-          <p><a href="mailto:support@ethvm.com">support@ethvm.com</a></p>
+          <p><a href="mailto:support@ethvm.com">support@cryptocurve.io</a></p>
 
         </div>
         <div class="col-md-6">
@@ -59,7 +59,7 @@
 
           <div class="input-block donate">
             <h5>Donate</h5>
-            <p><span>ETH:</span> <span>mewtopia.eth</span> <a href="https://etherscan.io/address/0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D">0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D</a></p>
+            <p><span>ETH:</span> <a href="https://etherscan.io/address/0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D">0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D</a></p>
             <p><span>BTC:</span> <a href="https://blockchain.info/address/1DECAF2uSpFTP4L1fAHR8GCLrPqdwdLse9">1DECAF2uSpFTP4L1fAHR8GCLrPqdwdLse9</a></p>
           </div>
         </div>
@@ -70,12 +70,12 @@
       <div class="copy-right-container">
         <div class="copy-right">
           <p>©Copyright 2018 All rights reserved by <a href="/about" class="text-white">Ethereum Virtual Machine</a>.</p>
+          <p>©Copyright 2018 All rights reserved by <a href="/about" class="text-white">CryptoCurve</a>.</p>
         </div>
 
         <div class="social-buttons">
-          <a href="https://www.facebook.com/enKryptIO/" target="_blank"><i class="fa fa-facebook-f"></i></a>
-          <a href="https://twitter.com/enkryptio" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="https://github.com/enKryptIO" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/crypto_curve" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/CryptoCurve" target="_blank"><i class="fa fa-github"></i></a>
         </div>
 
       </div>

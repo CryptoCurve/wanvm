@@ -9,7 +9,7 @@
       return {
         blockTitle: 'Last Block',
         blockIconType: 'tachometer',
-        blockIconColor: '#c271f5'
+        blockIconColor: '#fff'
 
       }
     },

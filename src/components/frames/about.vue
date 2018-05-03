@@ -5,7 +5,7 @@
       <div class="page-title-container">
         <div class="page-title">
           <h3>About</h3>
-          <h6 class="text-muted">Welcome to Ethereum Virtual Machine</h6>
+          <h6 class="text-muted">Welcome to Wanchain Virtual Machine</h6>
         </div>
 
         <div class="search-block">

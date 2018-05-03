@@ -9,7 +9,7 @@
     name: 'PendingTxSmallBlock',
     data() {
       return {
-        blockTitle: 'Pending Tx',
+        blockTitle: 'Completed Tx',
         blockIconType: 'asterisk',
         blockIconColor: '#7c76fc',
       }

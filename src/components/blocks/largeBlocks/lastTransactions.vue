@@ -10,7 +10,8 @@
       </div>
       <div class="block" v-for="tx in transactions" v-bind:key="tx.getHash().toString()">
         <li>
-          <div class="hash-block">
+          <div class="hash-block fromto">
+            <p class="title">Hash</p>
             <p class="hash"><router-link :to="'/tx/'+tx.getHash().toString()">{{tx.getHash().toString()}}</router-link></p>
           </div>
           <div class="fromto">

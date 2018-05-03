@@ -8,7 +8,7 @@
       <div class="page-title-container">
         <div class="page-title">
           <h3>Address Overview</h3>
-          <h6 class="text-muted">Ethereum wallet address overview / Transactions information</h6>
+          <h6 class="text-muted">Wanchain wallet address overview / Transactions information</h6>
         </div>
 
         <div class="search-block">
@@ -22,14 +22,7 @@
 
 
       <div class="tab-menu-container">
-        <ul class="tabs">
-          <li v-on:click="nav1on" v-bind:class="{ active: nav1 }">Transactions</li>
-          <li v-on:click="nav2on" v-bind:class="{ active: nav2 }">Tokens</li>
-          <li v-on:click="nav3on" v-bind:class="{ active: nav3 }">Network History</li>
-          <li v-on:click="nav4on" v-bind:class="{ active: nav4 }">Mining History</li>
-          <li v-on:click="nav5on" v-bind:class="{ active: nav5 }">Tokens</li>
-
-        </ul>      
+           
 
         <div class="tab-content">
           <div v-if="nav1 === true" class="">            

@@ -3,7 +3,7 @@
     <div class="block-body">
       <div class="block-header" v-if="showheader === true">
         <li>TXn#</li>
-        <li class="eth">ETH</li>
+        <li class="eth">WAN</li>
         <li class="gas">GAS</li>
         <li>WEI</li>
         <li></li>
@@ -17,7 +17,7 @@
           <div class="fromto">
             <p class="title">From</p>
             <p class=""><router-link :to="'/address/'+tx.getFrom().toString()">{{tx.getFrom().toString()}}</router-link></p>
-                    
+
             <p class="title" v-if="tx.getContractAddress().toString()">Contract</p>
             <p class="title" v-else>To</p>
             <p class="" v-if="tx.getContractAddress().toString()"><router-link :to="'/address/'+tx.getContractAddress().toString()">{{tx.getContractAddress().toString()}}</router-link></p>
@@ -40,7 +40,7 @@
             <span class="glyphicon glyphicon-ok success"></span>
           </div>
         </li>
-      </div>      
+      </div>
     </div>
   </div>
 </template>
@@ -55,7 +55,7 @@
       'showheader'
     ],
     created() {
-      
+
     },
   methods: {
     getShortEthValue (newEthValue, isBool) {
@@ -71,8 +71,8 @@
         return isShort;
 
     }
-   
-  }  
+
+  }
   })
 
 </script>

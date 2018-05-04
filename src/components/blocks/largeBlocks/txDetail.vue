@@ -19,7 +19,7 @@
                     <li>From</li>
                     <li class= "address-link"><router-link :to="'/address/'+tx.getFrom().toString()">{{tx.getFrom().toString()}}</router-link></li>
                 </div>
-                
+
                     <div v-if="tx.getContractAddress().toString()">
                         <li>Contract</li>
                         <li class= "link"><router-link :to="'/address/'+tx.getContractAddress().toString()">{{tx.getContractAddress().toString()}}</router-link></li>
@@ -28,10 +28,10 @@
                         <li>To</li>
                         <li class="link"><router-link :to="'/address/'+tx.getTo().toString()">{{tx.getTo().toString()}}</router-link></li>
                     </div>
-                
+
                 <div>
                     <li>Amount</li>
-                    <li>{{tx.getValue().toEth().toString()}}&nbsp;ETH</li>
+                    <li>{{tx.getValue().toEth().toString()}}&nbsp;WAN</li>
                 </div>
                 <div>
                     <li>Block</li>
@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <li>Tx Cost</li>
-                    <li>{{getTxCost(tx.getGasPrice().toEth(), tx.getGasUsed().toNumber())}} &nbsp;ETH</li>
+                    <li>{{getTxCost(tx.getGasPrice().toEth(), tx.getGasUsed().toNumber())}} &nbsp;WAN</li>
                 </div>
             </div>
             <!-- .details -->
@@ -90,11 +90,10 @@ export default Vue.extend({
 
     },
     computed: {
-      
+
     }
 })
 </script>
 <style scoped="" lang="less">
 @import "~lessPath/sunil/blocks/largeBlocks/txDetail.less";
 </style>
-

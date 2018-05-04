@@ -1,10 +1,10 @@
 <template>
   <div id="base-container">
-    
-    
+
+
     <!-- HEADER -->
     <block-header :pagename="pageName"></block-header>
-    
+
 
     <!-- BODY -->
 
@@ -14,19 +14,19 @@
     <frame-pending v-else-if="pageName == 'pending'" :type="pageName"></frame-pending>
     <frame-charts v-else-if="pageName == 'charts'"></frame-charts>
     <frame-about v-else-if="pageName == 'about'"></frame-about>
-    
+
     <!--Detail Pages -->
     <frame-block-detail v-else-if="pageName == 'block' && param" :blockHash="param"></frame-block-detail>
     <frame-address v-else-if="pageName == 'address' && param" :address="param"></frame-address>
     <frame-tx-detail v-else-if="pageName == 'tx' && param" :txHash="param"></frame-tx-detail>
-    
+
     <!-- Hope Page -->
     <frame-home v-else></frame-home>
-    
+
 
     <!-- FOOTER -->
     <block-footer></block-footer>
-    
+
   </div>
 </template>
 
@@ -77,7 +77,7 @@
           }
       },
       mounted: function() {
-        
+
       }
   })
 </script>
@@ -89,4 +89,3 @@
 <style scoped lang="less">
   @import "~lessPath/sunil/index.less";
 </style>
-

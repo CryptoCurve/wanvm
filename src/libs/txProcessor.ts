@@ -7,6 +7,7 @@ let dedup = (tx:Tx, pastTxs: Array<Tx>): Array<Tx> => {
 	return pastTxs
 }
 let processTxs = (tx: Tx, pastTxs: Array<Tx>): Array<Tx> => {
+	console.log(tx)
 	pastTxs = dedup(tx, pastTxs)
 	pastTxs.unshift(tx)
 	return pastTxs

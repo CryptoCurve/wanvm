@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-2">
           <h5>Find Us</h5>
-          <p><a href="mailto:support@ethvm.com">support@cryptocurve.io</a></p>
+          <p><a href="mailto:support@cryptocurve.com">support@cryptocurve.io</a></p>
 
         </div>
         <div class="col-md-6">

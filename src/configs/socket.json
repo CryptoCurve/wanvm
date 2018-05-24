@@ -1,6 +1,6 @@
 {
     "purl": "http://localhost",
-    "url": "https://ws.explorer.cryptocurve.network",
+    "url": "https://ws.explorer.curve.network",
     "pport": "3000",
     "port": "443"
 }

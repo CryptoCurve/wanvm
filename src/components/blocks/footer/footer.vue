@@ -32,7 +32,7 @@
           </div>
 
           <div class="input-block hidden">
-            
+
             <h5>Connect With Us</h5>
 
             <!-- Begin MailChimp Signup Form -->
@@ -54,11 +54,11 @@
 
             <!--End mc_embed_signup-->
 
-            
+
           </div>
 
           <div class="input-block donate">
-            <h5>Donate</h5>
+            <h5>Donate to ethvm</h5>
             <p><span>ETH:</span> <a href="https://etherscan.io/address/0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D">0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D</a></p>
             <p><span>BTC:</span> <a href="https://blockchain.info/address/1DECAF2uSpFTP4L1fAHR8GCLrPqdwdLse9">1DECAF2uSpFTP4L1fAHR8GCLrPqdwdLse9</a></p>
           </div>

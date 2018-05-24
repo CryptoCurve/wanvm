@@ -30,7 +30,7 @@
           <li>Miner</li>
           <li>{{block.getMiner().toString()}}</li>
         </div>
-        
+
         <div>
           <li>Block Reward</li>
           <li>{{block.getBlockReward().toEth()}}&nbsp;ETH</li>
@@ -80,16 +80,16 @@
         </div>
         <div v-show="!isUncle">
           <li>TX Fees</li>
-          <li>{{block.getTxFees().toEth()}}&nbsp;ETH</li>
+          <li>{{block.getTxFees().toEth()}}&nbsp;WAN</li>
         </div>
 
         <div v-show="!isUncle">
           <li>Uncle Reward</li>
-          <li>{{block.getUncleReward().toEth()}}&nbsp;ETH</li>
+          <li>{{block.getUncleReward().toEth()}}&nbsp;WAN</li>
         </div>
         <div>
           <li>Total BlockReward</li>
-          <li>{{block.getTotalBlockReward().toEth()}}&nbsp;ETH</li>
+          <li>{{block.getTotalBlockReward().toEth()}}&nbsp;WAN</li>
         </div>
         <div v-show="!isUncle">
           <li>SHA3 Uncles</li>
@@ -103,14 +103,14 @@
           <li>Total Difficulty</li>
           <li>{{block.getTotalDifficulty().toNumber()}}</li>
         </div>
-      
+
       </div><!-- .details -->
     </div><!-- .block-detail-container -->
 
 
 
     <div class="uncles-container" v-if="uncles.length > 0">
-      
+
       <div class="uncles-detail" v-for="uncle in uncles">
         <p class="block-title">Uncle</p>
         <div class="details">
@@ -124,7 +124,7 @@
           </div>
           <div>
             <li>Block Reward</li>
-            <li>{{uncle.getBlockReward().toEth()}}&nbsp;ETH</li>
+            <li>{{uncle.getBlockReward().toEth()}}&nbsp;WAN</li>
           </div>
         </div><!-- .details -->
       </div><!-- .block-title -->

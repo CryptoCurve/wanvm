@@ -1,9 +1,9 @@
 <template>
   <div id="GraphsLineChart" class="line-chart">
 
-     <vue-chart type="line" :data="chartData" 
-                            :options="chartOptions" 
-                            :redraw="redraw" 
+     <vue-chart type="line" :data="chartData"
+                            :options="chartOptions"
+                            :redraw="redraw"
                             :chartTitle="newTitle"
                             :chartDescription="newDescription"
                             unfilled="true"></vue-chart>
@@ -37,7 +37,7 @@ let lineOptions = {
       },
       'scaleLabel': {
         'display': true,
-        'labelString': 'Tx Fees ETH'
+        'labelString': 'Tx Fees WAN'
       }
     }, {
       'id': 'y-axis-2',
@@ -115,7 +115,7 @@ export default Vue.extend({
         'labels': data.labels,
         'datasets': [
           {
-            'label': 'avg Tx Fees (ETH)',
+            'label': 'avg Tx Fees (WAN)',
             'borderColor': '#2779ff',
             'backgroundColor': '#2779ff',
             'data': data.avgFees,
@@ -144,5 +144,3 @@ export default Vue.extend({
 
 
 </script>
-
-

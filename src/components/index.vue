@@ -18,6 +18,7 @@
     <!--Detail Pages -->
     <frame-block-detail v-else-if="pageName == 'block' && param" :blockHash="param"></frame-block-detail>
     <frame-address v-else-if="pageName == 'address' && param" :address="param"></frame-address>
+    <frame-account v-else-if="pageName == 'account' && param" :address="param"></frame-account>
     <frame-tx-detail v-else-if="pageName == 'tx' && param" :txHash="param"></frame-tx-detail>
 
     <!-- Hope Page -->

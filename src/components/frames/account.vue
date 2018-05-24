@@ -1,7 +1,7 @@
 <template>
   <div id="tx-detail">
     <div class="container">
-      
+
       <!-- Title and Search Bar -->
       <div class="page-title-container">
         <div class="page-title">
@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <!-- Address Deatails -->
+      <!-- Address Details -->
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="block-title-container">
@@ -84,9 +84,11 @@ export default Vue.extend({
   },
   created() {
     let _this = this
+    console.log(this.address.substring(2))
     this.$socket.emit('getAddressTransactionPages', {
       address: new Buffer(_this.address.substring(2), 'hex')
     }, (err: Error, data: Array<txLayout>) => {
+      console.log(data)
       if (err) {
         _this.$toasted.error(err.message)
       } else {
@@ -94,13 +96,13 @@ export default Vue.extend({
           return new Tx(_tx)
         })
       }
-    }) 
+    })
     _this.$socket.emit('getAccount', _this.address, (err, result) => {
       console.log(err, result)
       if (!err && result) {
         let acc = new Account(new Buffer(result))
         _this.account.balance = common.EthValue(acc.balance)
-    
+
       }
     })
     let tokens = lists.tokens.ETH
@@ -157,4 +159,3 @@ export default Vue.extend({
 <style scoped="" lang="less">
 @import "~lessPath/NewHome/Frames/FramesOverview.less";
 </style>
-

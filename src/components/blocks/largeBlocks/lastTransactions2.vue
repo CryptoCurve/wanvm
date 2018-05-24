@@ -13,7 +13,7 @@
         <div>From</div>
         <dir></dir>
         <div>To</div>
-        <div>ETH</div>
+        <div>WAN</div>
         <div>Gas <i class="fa fa-question-circle" aria-hidden="true"></i></div>
         <div>WEI <i class="fa fa-question-circle" aria-hidden="true"></i></div>
         <div>Status</div>
@@ -35,7 +35,7 @@
           </div>
           <div v-else>
             <span class="glyphicon glyphicon-ok success"></span>
-          </div>          
+          </div>
         </div>
 
       </div>
@@ -49,7 +49,7 @@
           <div class="fromto">
             <p class="title">From</p>
             <p class=""><router-link :to="'/address/'+tx.getFrom().toString()">{{tx.getFrom().toString()}}</router-link></p>
-                    
+
             <p class="title">To</p>
             <p class=""><router-link :to="'/address/'+tx.getTo().toString()">{{tx.getTo().toString()}}</router-link></p>
           </div>
@@ -94,5 +94,3 @@ export default Vue.extend({
 <style scoped="" lang="less">
   @import "~lessPath/sunil/blocks/largeBlocks/lastTransactions2.less";
 </style>
-
-

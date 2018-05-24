@@ -67,7 +67,6 @@ export default Vue.extend({
   mounted: function() {
     let _this = this
     this.$socket.emit('getTx', Buffer.from(this.txHash.substring(2), 'hex'), (err, data) => {
-      console.log(data)
       if (data) {
         _this.transaction = new Tx(data)
 

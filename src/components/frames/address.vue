@@ -1,7 +1,7 @@
 <template>
-  
+
   <div class="">
-    
+
     <div class="container">
 
 
@@ -22,11 +22,11 @@
 
 
       <div class="tab-menu-container">
-           
+
 
         <div class="tab-content">
-          <div v-if="nav1 === true" class="">            
-            <block-last-transactions :transactions="txs" :showheader="true"></block-last-transactions>
+          <div v-if="nav1 === true" class="">
+            <block-last-transactions :transactions="txsOfAddress" :showheader="true"></block-last-transactions>
           </div>
           <div v-if="nav2 === true" class="">
             <button class="top-right-button-common">More</button>
@@ -76,7 +76,7 @@
           <div v-if="nav5 === true" class="" :account="account">
             <button class="top-right-button-common">More</button>
             <div class="sub-tab mining-history-container">
-              
+
                 <ul v-for="token in account.tokens">
                    <li>{{token.name}} : {{token.symbol}}</li>
                   <li>Balance: {{token.balance}}</li>
@@ -85,8 +85,8 @@
 
 
                   </ul>
-                
-              
+
+
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import bn from 'bignumber.js';
-import { common } from '@/libs';
+import { common, Tx } from '@/libs';
 import ethUnits from 'ethereumjs-units'
  var utils =  require("../../libs/utils.js")
 
@@ -117,21 +117,23 @@ export default Vue.extend({
   name: 'FrameAccount',
   props: [
     'address',
-    'tokens'
+    'tokens',
+    'txsOfAddress'
   ],
   data() {
     return {
       account: {
         address: this.address,
         balance: common.EthValue(new Buffer(0)),
-        tokens: this.tokens
+        tokens: this.tokens,
+        txsOfAddress: this.txsOfAddress,
 
       },
 
       nav1 : true,
       nav2 : false,
       nav3 : false,
-      nav4 : false,     
+      nav4 : false,
       nav5 : false
 
     }
@@ -148,6 +150,14 @@ export default Vue.extend({
     this.$socket.emit('getTokenBalance', this.address, (err, result) => {
       console.log(err, result)
        _this.account.tokens = utils.decode(result.result)
+    })
+    this.$socket.emit('getTxs', this.address, (err, data) => {
+      console.log(data)
+      if (data) {
+        _this.txsOfAddress = new Tx(data)
+
+        /* Method to get Subtransactions: */
+      }
     })
   },
   methods: {
